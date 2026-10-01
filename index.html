@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Monster Collection System (MVP)</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen flex flex-col font-sans">
+
+    <!-- Header & Navigation Tabs -->
+    <header class="bg-slate-800 border-b border-slate-700 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <div class="flex items-center space-x-3">
+                <span class="text-3xl">📖</span>
+                <div>
+                    <h1 class="text-xl font-bold tracking-wider text-amber-400">LIBRARY MONSTER SYSTEM</h1>
+                    <p class="text-xs text-slate-400">Season 1: Archives & Abominations</p>
+                </div>
+            </div>
+            
+            <!-- View Tabs -->
+            <nav class="flex flex-wrap gap-2 bg-slate-900 p-1.5 rounded-lg border border-slate-700">
+                <button data-tab="admin" class="tab-btn px-4 py-2 rounded-md text-sm font-medium transition bg-amber-600 text-white shadow">Staff Admin</button>
+                <button data-tab="patron" class="tab-btn px-4 py-2 rounded-md text-sm font-medium transition text-slate-300 hover:text-white hover:bg-slate-800">Patron Incubator</button>
+                <button data-tab="binder" class="tab-btn px-4 py-2 rounded-md text-sm font-medium transition text-slate-300 hover:text-white hover:bg-slate-800">Binder Grid</button>
+                <button data-tab="trade" class="tab-btn px-4 py-2 rounded-md text-sm font-medium transition text-slate-300 hover:text-white hover:bg-slate-800">Trade</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Dynamic Container -->
+    <main class="flex-grow max-w-7xl w-full mx-auto px-4 py-6">
+        <div id="view-container">
+            <!-- Views will render dynamically here -->
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-800 border-t border-slate-700 text-center py-4 text-xs text-slate-500">
+        Library Monster Collection System &bull; Season 1 MVP &bull; Native ES6 Modules
+    </footer>
+
+    <!-- App Entry Point -->
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>
